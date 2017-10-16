@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SSModuleManager"
-  s.version      = "1.1"
+  s.version      = "1.2"
   s.summary      = "A module of SSModuleManager."
 
   # This description is used to generate tags and improve search results.

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB15FF6A1F0BA0D9007D7D5A /* SSModuleManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CB15FF681F0BA0D9007D7D5A /* SSModuleManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB15FF781F0BA12C007D7D5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15FF771F0BA12C007D7D5A /* main.m */; };
 		CB15FF7B1F0BA12C007D7D5A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15FF7A1F0BA12C007D7D5A /* AppDelegate.m */; };
 		CB15FF7E1F0BA12C007D7D5A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15FF7D1F0BA12C007D7D5A /* ViewController.m */; };
@@ -22,7 +21,6 @@
 
 /* Begin PBXFileReference section */
 		CB15FF651F0BA0D9007D7D5A /* SSModuleManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSModuleManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB15FF681F0BA0D9007D7D5A /* SSModuleManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSModuleManager.h; sourceTree = "<group>"; };
 		CB15FF691F0BA0D9007D7D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB15FF741F0BA12B007D7D5A /* ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB15FF771F0BA12C007D7D5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 		CB15FF671F0BA0D9007D7D5A /* SSModuleManager */ = {
 			isa = PBXGroup;
 			children = (
-				CB15FF681F0BA0D9007D7D5A /* SSModuleManager.h */,
 				CB15FF8B1F0BA1BE007D7D5A /* SSModuleProtrol.h */,
 				CB15FF691F0BA0D9007D7D5A /* Info.plist */,
 				CB15FF8D1F0BA21F007D7D5A /* SSModuleCenter.h */,
@@ -118,7 +115,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB15FF6A1F0BA0D9007D7D5A /* SSModuleManager.h in Headers */,
 				CB15FF8C1F0BA1BE007D7D5A /* SSModuleProtrol.h in Headers */,
 				CB15FF8F1F0BA21F007D7D5A /* SSModuleCenter.h in Headers */,
 			);

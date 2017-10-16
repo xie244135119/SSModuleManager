@@ -58,7 +58,11 @@
 - (void)addModuleClass:(Class)moduleClass
 {
     id module = [[moduleClass alloc]init];
-    NSAssert(module, @"当前模块不存在");
+//    NSAssert(module, @"当前模块不存在");
+    if (module == nil) {
+        NSLog(@" warnings: %@ 模块不存在 ",moduleClass);
+        return;
+    }
     [self addModule:module];
 }
 
