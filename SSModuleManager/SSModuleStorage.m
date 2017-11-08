@@ -14,16 +14,16 @@
 
 + (instancetype)module
 {
-    static const NSString *key = nil;
+    static NSString *key = nil;
     if(key == nil) {
         key = [[self class] description];
     }
     UIApplication *app = [UIApplication sharedApplication];
-    id sender = objc_getAssociatedObject(app, [key cStringUsingEncoding:30]);
+    id sender = objc_getAssociatedObject(app, &key);
     // 保存内容
     if(sender == nil) {
         SSModuleStorage *storage = [[[self class] alloc]init];
-        objc_setAssociatedObject(app, [key cStringUsingEncoding:30], storage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(app, &key, storage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         sender = storage;
     }
     return sender;
