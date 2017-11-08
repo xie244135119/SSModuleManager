@@ -1,13 +1,13 @@
 //
 //  SSModuleCenter.h
 //  SSModuleManager
-//
+//  即将废弃
 //  Created by SunSet on 2017/7/4.
 //  Copyright © 2017年 SunSet. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "SSModuleProtrol.h"
+#import "SSModule.h"
 
 @interface SSModuleCenter : NSObject
 
@@ -16,14 +16,12 @@
 + (instancetype)defaultCenter;
 
 
-
 /**
  注册子模块
 
  @param module 模块
  */
 + (void)registerModule:(id<SSModuleProtrol>)module;
-
 
 /**
  添加子模块
@@ -53,7 +51,6 @@
  */
 - (void)removeModuleClass:(Class)moduleClass;
 
-
 /**
  所有的模块
  
@@ -61,6 +58,22 @@
  */
 - (NSArray<id<SSModuleProtrol>> *)allModule;
 
+/**
+ 发现模块类型
+
+ @param moduleClass 模块Class
+ @return 查找到的值
+ */
+- (id)findModuleClass:(Class)moduleClass;
+
+- (id)findModle:(id<SSModuleProtrol>)module;
+
+
 
 
 @end
+
+
+
+
+

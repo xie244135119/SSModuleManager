@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SSModuleStorage.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()
 
@@ -17,12 +19,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    NSLog(@" 数据 :%@ ",[SSModuleStorage module]);
+    [self performSelector:@selector(test) withObject:nil afterDelay:1];
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)test
+{
+    NSLog(@" 数据 :%@ ",[SSModuleStorage module]);
 }
 
 

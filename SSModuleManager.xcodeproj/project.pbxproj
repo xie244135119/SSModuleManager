@@ -13,10 +13,14 @@
 		CB15FF811F0BA12C007D7D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB15FF7F1F0BA12C007D7D5A /* Main.storyboard */; };
 		CB15FF831F0BA12C007D7D5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB15FF821F0BA12C007D7D5A /* Assets.xcassets */; };
 		CB15FF861F0BA12C007D7D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB15FF841F0BA12C007D7D5A /* LaunchScreen.storyboard */; };
-		CB15FF8C1F0BA1BE007D7D5A /* SSModuleProtrol.h in Headers */ = {isa = PBXBuildFile; fileRef = CB15FF8B1F0BA1BE007D7D5A /* SSModuleProtrol.h */; };
-		CB15FF8F1F0BA21F007D7D5A /* SSModuleCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = CB15FF8D1F0BA21F007D7D5A /* SSModuleCenter.h */; };
-		CB15FF901F0BA21F007D7D5A /* SSModuleCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15FF8E1F0BA21F007D7D5A /* SSModuleCenter.m */; };
-		CB15FF911F0BA21F007D7D5A /* SSModuleCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CB15FF8E1F0BA21F007D7D5A /* SSModuleCenter.m */; };
+		CB15FF8C1F0BA1BE007D7D5A /* SSModule.h in Headers */ = {isa = PBXBuildFile; fileRef = CB15FF8B1F0BA1BE007D7D5A /* SSModule.h */; };
+		CB2864951FA6FCDB007C70E0 /* SSContext.h in Headers */ = {isa = PBXBuildFile; fileRef = CB2864931FA6FCDB007C70E0 /* SSContext.h */; };
+		CB2864961FA6FCDB007C70E0 /* SSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2864941FA6FCDB007C70E0 /* SSContext.m */; };
+		CB2864971FA6FCDB007C70E0 /* SSContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CB2864941FA6FCDB007C70E0 /* SSContext.m */; };
+		CB28649E1FA6FD01007C70E0 /* SSService.h in Headers */ = {isa = PBXBuildFile; fileRef = CB28649D1FA6FD01007C70E0 /* SSService.h */; };
+		CB4CA5D11FB2BC5A005E6E94 /* SSModuleStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4CA5CF1FB2BC5A005E6E94 /* SSModuleStorage.h */; };
+		CB4CA5D21FB2BC5A005E6E94 /* SSModuleStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA5D01FB2BC5A005E6E94 /* SSModuleStorage.m */; };
+		CB4CA5D31FB2BC5A005E6E94 /* SSModuleStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4CA5D01FB2BC5A005E6E94 /* SSModuleStorage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +36,14 @@
 		CB15FF821F0BA12C007D7D5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB15FF851F0BA12C007D7D5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB15FF871F0BA12C007D7D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB15FF8B1F0BA1BE007D7D5A /* SSModuleProtrol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSModuleProtrol.h; sourceTree = "<group>"; };
+		CB15FF8B1F0BA1BE007D7D5A /* SSModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSModule.h; sourceTree = "<group>"; };
 		CB15FF8D1F0BA21F007D7D5A /* SSModuleCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSModuleCenter.h; sourceTree = "<group>"; };
 		CB15FF8E1F0BA21F007D7D5A /* SSModuleCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSModuleCenter.m; sourceTree = "<group>"; };
+		CB2864931FA6FCDB007C70E0 /* SSContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSContext.h; sourceTree = "<group>"; };
+		CB2864941FA6FCDB007C70E0 /* SSContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSContext.m; sourceTree = "<group>"; };
+		CB28649D1FA6FD01007C70E0 /* SSService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSService.h; sourceTree = "<group>"; };
+		CB4CA5CF1FB2BC5A005E6E94 /* SSModuleStorage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSModuleStorage.h; sourceTree = "<group>"; };
+		CB4CA5D01FB2BC5A005E6E94 /* SSModuleStorage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSModuleStorage.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,10 +85,15 @@
 		CB15FF671F0BA0D9007D7D5A /* SSModuleManager */ = {
 			isa = PBXGroup;
 			children = (
-				CB15FF8B1F0BA1BE007D7D5A /* SSModuleProtrol.h */,
+				CB15FF8B1F0BA1BE007D7D5A /* SSModule.h */,
+				CB28649D1FA6FD01007C70E0 /* SSService.h */,
 				CB15FF691F0BA0D9007D7D5A /* Info.plist */,
 				CB15FF8D1F0BA21F007D7D5A /* SSModuleCenter.h */,
 				CB15FF8E1F0BA21F007D7D5A /* SSModuleCenter.m */,
+				CB4CA5CF1FB2BC5A005E6E94 /* SSModuleStorage.h */,
+				CB4CA5D01FB2BC5A005E6E94 /* SSModuleStorage.m */,
+				CB2864931FA6FCDB007C70E0 /* SSContext.h */,
+				CB2864941FA6FCDB007C70E0 /* SSContext.m */,
 			);
 			path = SSModuleManager;
 			sourceTree = "<group>";
@@ -115,8 +129,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB15FF8C1F0BA1BE007D7D5A /* SSModuleProtrol.h in Headers */,
-				CB15FF8F1F0BA21F007D7D5A /* SSModuleCenter.h in Headers */,
+				CB4CA5D11FB2BC5A005E6E94 /* SSModuleStorage.h in Headers */,
+				CB28649E1FA6FD01007C70E0 /* SSService.h in Headers */,
+				CB15FF8C1F0BA1BE007D7D5A /* SSModule.h in Headers */,
+				CB2864951FA6FCDB007C70E0 /* SSContext.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +237,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB15FF901F0BA21F007D7D5A /* SSModuleCenter.m in Sources */,
+				CB2864961FA6FCDB007C70E0 /* SSContext.m in Sources */,
+				CB4CA5D21FB2BC5A005E6E94 /* SSModuleStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,10 +246,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB15FF911F0BA21F007D7D5A /* SSModuleCenter.m in Sources */,
+				CB2864971FA6FCDB007C70E0 /* SSContext.m in Sources */,
 				CB15FF7E1F0BA12C007D7D5A /* ViewController.m in Sources */,
 				CB15FF7B1F0BA12C007D7D5A /* AppDelegate.m in Sources */,
 				CB15FF781F0BA12C007D7D5A /* main.m in Sources */,
+				CB4CA5D31FB2BC5A005E6E94 /* SSModuleStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

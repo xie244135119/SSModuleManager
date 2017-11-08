@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol SSModuleProtrol <UIApplicationDelegate>
+@protocol SSModule <UIApplicationDelegate>
 
 @optional
 // 处理第三方链接跳转过来的url
@@ -40,3 +40,11 @@
 
 
 @end
+
+
+
+
+
+
+
+

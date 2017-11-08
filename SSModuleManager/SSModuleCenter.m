@@ -66,7 +66,6 @@
     [self addModule:module];
 }
 
-
 - (void)removeModule:(id<SSModuleProtrol>)module
 {
     [_allModules removeObject:module];
@@ -84,11 +83,27 @@
     }
 }
 
-
 - (NSArray<id<SSModuleProtrol>> *)allModule
 {
     return _allModules;
 }
+
+- (id)findModuleClass:(Class)moduleClass
+{
+    id<SSModuleProtrol> sender = nil;
+    for (sender in _allModules) {
+        if ([sender isKindOfClass:[moduleClass class]]) {
+            break;
+        }
+    }
+    return sender;
+}
+
+- (id)findModle:(id<SSModuleProtrol>)module
+{
+    return [self findModuleClass:[module class]];
+}
+
 
 
 
