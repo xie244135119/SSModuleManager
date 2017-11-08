@@ -27,7 +27,7 @@
 + (instancetype)module
 {
     // 本地查询相应的key值
-    NSString *modulesDictKey = @"_AMDModulesStorageDict";
+    static NSString *modulesDictKey = @"_AMDModulesStorageDict";
     UIApplication *app = [UIApplication sharedApplication];
     NSMutableDictionary *moduledict = objc_getAssociatedObject(app, &modulesDictKey);
     if (moduledict == nil) {
