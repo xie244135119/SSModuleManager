@@ -11,9 +11,9 @@
 @protocol SSService <NSObject>
 
 @optional
-//
+// 启动服务的时候
 - (void)loadService;
-//
+// 卸载服务的时候
 - (void)unloadService;
 
 

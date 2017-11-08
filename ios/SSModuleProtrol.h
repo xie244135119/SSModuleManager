@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol SSModule <UIApplicationDelegate, NSObject>
+@protocol SSModuleProtrol <UIApplicationDelegate>
 
 @optional
 // 处理第三方链接跳转过来的url

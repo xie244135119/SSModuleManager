@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SSModule.h"
+#import "SSModuleProtrol.h"
 
 @interface SSModuleCenter : NSObject
 
