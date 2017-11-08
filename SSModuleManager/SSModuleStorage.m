@@ -9,24 +9,38 @@
 #import "SSModuleStorage.h"
 #import <objc/runtime.h>
 
+@interface SSModuleStorage()
+{
+    //本地所有存储的模块 key {className:Key(不变的)}
+//    NSMutableDictionary *_moduleStorageDict;
+}
+@end
+
 @implementation SSModuleStorage
+
+//- (void)dealloc
+//{
+//    _moduleStorageDict = nil;
+//}
 
 
 + (instancetype)module
 {
-    static NSString *key = nil;
-    if(key == nil) {
-        key = [[self class] description];
-    }
+    // 本地查询相应的key值
+    NSString *modulesDictKey = @"_AMDModulesStorageDict";
     UIApplication *app = [UIApplication sharedApplication];
-    id sender = objc_getAssociatedObject(app, &key);
-    // 保存内容
-    if(sender == nil) {
-        SSModuleStorage *storage = [[[self class] alloc]init];
-        objc_setAssociatedObject(app, &key, storage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        sender = storage;
+    NSMutableDictionary *moduledict = objc_getAssociatedObject(app, &modulesDictKey);
+    if (moduledict == nil) {
+        moduledict = [[NSMutableDictionary alloc]init];
+        objc_setAssociatedObject(app, &modulesDictKey, moduledict, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
-    return sender;
+    
+    NSString *className = [[self class] description];
+    if (![moduledict.allKeys containsObject:className]) {
+        SSModuleStorage *storage = [[[self class] alloc]init];
+        [moduledict setObject:storage forKey:className];
+    }
+    return moduledict[className];
 }
 
 
