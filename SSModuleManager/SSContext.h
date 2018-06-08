@@ -52,6 +52,7 @@
 @end
 
 
+// 服务类
 @interface SSContext(SSService)
 
 // 注册相应的服务
@@ -63,15 +64,10 @@
 @end
 
 
+// 添加AppDelegate
+@interface SSContext(AppDelegate)<UIApplicationDelegate>
 
-
-
-
-
-
-
-
-
+@end;
 
 
 

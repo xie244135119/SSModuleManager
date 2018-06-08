@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SSContext.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [[SSContext shareContext] registerModuleClass:[ViewController class]];
+    
+    [[SSContext shareContext] application:application didFinishLaunchingWithOptions:launchOptions];
+    
     return YES;
 }
 

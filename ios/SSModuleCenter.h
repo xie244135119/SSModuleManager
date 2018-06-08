@@ -65,10 +65,7 @@
  @return 查找到的值
  */
 - (id)findModuleClass:(Class)moduleClass;
-
 - (id)findModle:(id<SSModuleProtrol>)module;
-
-
 
 
 @end
