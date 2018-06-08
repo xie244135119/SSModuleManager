@@ -41,7 +41,6 @@
  */
 - (id<SSModule>)findModuleClass:(Class)moduleClass;
 
-
 /**
  本地已注册的所有模块
 
@@ -68,8 +67,4 @@
 @interface SSContext(AppDelegate)<UIApplicationDelegate>
 
 @end;
-
-
-
-
 
